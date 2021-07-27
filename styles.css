@@ -16,7 +16,6 @@
 }
 
 
-/* move home etc... to right */
 
 ul {
     flex: 1;
@@ -24,26 +23,20 @@ ul {
 }
 
 
-/* home etc will be aligned horizontally to the right */
 
 ul li {
     display: inline-block;
-    /* to remove the bullets */
     list-style: none;
     margin: 0 25px;
 }
 
 ul li a {
-    /* remove the line */
     text-decoration: none;
-    /* remove the line */
     color: black;
     padding: 0 10px;
     position: relative;
 }
 
-
-/* box sa taas ng home etc */
 
 ul li a::after {
     content: '';
