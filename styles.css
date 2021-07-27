@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.water {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* move home etc... to right */
+
+ul {
+    flex: 1;
+    text-align: right;
+}
+
+
+/* home etc will be aligned horizontally to the right */
+
+ul li {
+    display: inline-block;
+    /* to remove the bullets */
+    list-style: none;
+    margin: 0 25px;
+}
+
+ul li a {
+    /* remove the line */
+    text-decoration: none;
+    /* remove the line */
+    color: black;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+/* box sa taas ng home etc */
+
+ul li a::after {
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #3581c9;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar-icons img {
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navbar-icons {
+    margin-left: 40px;
+}
+
+.banner {
+    display: flex;
+    margin-top: 80px;
+}
+
+.left-col,
+.right-col {
+    flex-basis: 50%;
+}
+
+.right-col img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.search {
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(64, 136, 219);
+    margin: 5px 0 30px;
+}
+
+.search img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.search input {
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+
+.left-col h1 {
+    font-size: 100px;
+}
+
+.left-col h3 {
+    font-size: 35px;
+}
+
+span {
+    color: #3581c9;
+}
+
+.left-col p {
+    font-size: 14px;
+    color: #999;
+    margin: 50px 0;
+}
+
+.btn button {
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #3581c9;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #3581c9;
+    background: transparent;
+}
+
+.btn .primary-btn {
+    background: linear-gradient(rgb(93, 145, 241), blue);
+    box-shadow: 0 2px 15px rgba(43, 182, 224, 0.26);
+    color: white;
+}
+
+.btn {
+    margin-bottom: 50px;
+}
+
+.socmed {
+    width: 200px;
+    text-align: center;
+    opacity: .4;
+    position: relative;
+    margin-left: 160px;
+}
+
+.socmed img {
+    height: 20px;
+    margin: 0 14px;
+}
+
+.socmed::after {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 10px;
+}
